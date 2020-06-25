@@ -10,5 +10,24 @@ package DTO;
  * @author Gianpiero
  */
 public class Cuenta {
+    private Plato platos[];
+    private int total;
+
+    public Plato[] getPlatos() {
+        return platos;
+    }
+
+    public void setPlatos(Plato[] platos) {
+        this.platos = platos;
+    }
+
+    public int getTotal() {
+        return total;
+    }
+
+    public void setTotal(int total) {
+        this.total = total;
+    }
+    
     
 }

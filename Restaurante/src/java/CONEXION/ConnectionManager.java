@@ -16,7 +16,7 @@ import java.util.*;
  * @author Gianpiero
  */
 public class ConnectionManager {
-    private static String url="jdbc:mysql://localhost/votacion";
+    private static String url="jdbc:mysql://localhost/restaurante";
     private static String user="root";
     private static String password="";
     private static Connection conn;

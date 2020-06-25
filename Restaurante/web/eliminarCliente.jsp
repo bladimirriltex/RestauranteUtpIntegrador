@@ -33,7 +33,7 @@
             ps=con.prepareStatement("delete from Clientes where id="+id);
             ps.executeUpdate();
                                 
-            response.sendRedirect("verpersonas.jsp");
+            response.sendRedirect("verClientes.jsp");
                                 
                                 
         %>

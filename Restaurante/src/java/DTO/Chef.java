@@ -9,6 +9,6 @@ package DTO;
  *
  * @author Gianpiero
  */
-public class Chef {
+public class Chef extends Persona{
     
 }

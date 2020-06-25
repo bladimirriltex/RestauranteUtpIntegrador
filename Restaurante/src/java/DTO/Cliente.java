@@ -9,6 +9,6 @@ package DTO;
  *
  * @author Gianpiero
  */
-public class Cliente {
+public class Cliente extends Persona{
     
 }

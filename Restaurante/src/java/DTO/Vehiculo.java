@@ -10,5 +10,41 @@ package DTO;
  * @author Gianpiero
  */
 public class Vehiculo {
+    private int id;
+    private String placa;
+    private String tipo;
+    private boolean soat;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getPlaca() {
+        return placa;
+    }
+
+    public void setPlaca(String placa) {
+        this.placa = placa;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public boolean isSoat() {
+        return soat;
+    }
+
+    public void setSoat(boolean soat) {
+        this.soat = soat;
+    }
     
 }

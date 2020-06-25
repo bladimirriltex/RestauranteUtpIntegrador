@@ -22,6 +22,14 @@ public class Pedido {
     public void setCuenta(Cuenta cuenta) {
         this.cuenta = cuenta;
     }
+
+    public String getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(String fecha) {
+        this.fecha = fecha;
+    }
     
 
     public Cliente getCliente() {
