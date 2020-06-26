@@ -13,11 +13,11 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <title>Tus Clientes</title>
     </head>
     <body>
-        <div>
-            <div>
+        
                 <div>
                     <%
                         Connection con;
@@ -34,28 +34,30 @@
                         ps=con.prepareStatement("select * from Clientes");
                         rs=ps.executeQuery();
                     %>
-                    <div>
-                        <table>
+                    <div class="container">
+                        <table class="table table-bordered">
                             <tr>
-                                <th>Id</th>
-                                <th>Nombres</th>
-                                <th>Apellidos</th>
-                                <th>Celular</th>
-                                <th>Distrito</th>
-                                <th>Direccion</th>
+                                <th class="text-center">Id</th>
+                                <th class="text-center">Nombres</th>
+                                <th class="text-center">Apellidos</th>
+                                <th class="text-center">Celular</th>
+                                <th class="text-center">Distrito</th>
+                                <th class="text-center">Direccion</th>
+                                <th class="text-center">Acciones</th>
                             </tr>
                             <%
                         while(rs.next()){
                             %>
                             <tr>
-                                <td><%= rs.getString("id")%></td>
-                                <td><%= rs.getString("nombres")%></td>
-                                <td><%= rs.getString("apellidos")%></td>
-                                <td><%= rs.getString("celular")%></td>
-                                <td><%= rs.getString("distrito")%></td>
-                                <td><%= rs.getString("direccion")%></td>
+                                <td class="text-center"><%= rs.getString("id")%></td>
+                                <td class="text-center"><%= rs.getString("nombres")%></td>
+                                <td class="text-center"><%= rs.getString("apellidos")%></td>
+                                <td class="text-center"><%= rs.getString("celular")%></td>
+                                <td class="text-center"><%= rs.getString("distrito")%></td>
+                                <td class="text-center"><%= rs.getString("direccion")%></td>
                                 <td>
-                                    <a href="eliminarCliente.jsp?id=<%= rs.getString("id")%>">Eliminar</a>
+                                    <a class="btn btn-warning btn-sm" href="eliminarCliente.jsp?id=<%= rs.getString("id")%>">Editar</a>
+                                    <a class="btn btn-danger btn-sm" href="eliminarCliente.jsp?id=<%= rs.getString("id")%>">Eliminar</a>
                                 </td>
                             </tr>
                             <%
@@ -64,7 +66,6 @@
                         </table>
                     </div>
                 </div>
-            </div>
-        </div>
+            
     </body>
 </html>
