@@ -103,6 +103,11 @@ public class Persona {
         this.password = password;
     }
     
+ public String toString() {
+  return "Cliente [id=" + id + ", nombres=" + nombres + ", apellidos=" + apellidos + ", dni=" + dni + ", celular="
+    + celular + ", distrito=" + distrito +", direccion=" + direccion + ", correo=" + correo + ", password=" + password + "]";
+ }
+
     
     
 }

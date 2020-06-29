@@ -10,6 +10,7 @@ package DTO;
  * @author Gianpiero
  */
 public class Comprobante {
+    private int id;
     private Cuenta cuenta;
     private Cliente cliente;
     private String ruc;
